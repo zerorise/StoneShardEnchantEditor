@@ -245,6 +245,27 @@ namespace StoneShardItemEnchantEditor
         {
             ens = new List<Enchant>();
             ens.Add(new Enchant() {devname = "EVS",IGn = "Dodge Chance", ammount = 3,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Arcane_Resistance",IGn = "Arcane Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Bleed_Resistance",IGn = "Bleed Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Caustic_Resistance",IGn = "Caustic Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Control_Resistance",IGn = "Control Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Crushing_Resistance",IGn = "Crushing Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Fire_Resistance",IGn = "Fire Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Frost_Resistance",IGn = "Frost Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Hunger_Resistance",IGn = "Hunger Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Intoxication_Resistance",IGn = "Intoxication Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Move_Resistance",IGn = "Move Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Magic_Resistance",IGn = "Magic Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Nature_Resistance",IGn = "Nature Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Pain_Resistance",IGn = "Pain Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Physical_Resistance",IGn = "Physical Resistance", ammount = 3,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Piercing_Resistance",IGn = "Piercing Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Poison_Resistance",IGn = "Poison Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Psionic_Resistance",IGn = "Psionic Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Rending_Resistance",IGn = "Rending Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Shock_Resistance",IGn = "Shock Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Slashing_Resistance",IGn = "Slashing Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() {devname = "Unholy_Resistance",IGn = "Unholy Resistance", ammount = 5,type = "Armor" , percentage = "%" });
             ens.Add(new Enchant() { devname = "CTA", IGn = "Counter Chance", ammount = 5 ,type = "Weapon", percentage = "%" });
             ens.Add(new Enchant() { devname = "FMB", IGn = "Fumble Chance", ammount = -5, type = "Weapon", percentage = "%" });
             ens.Add(new Enchant() { devname = "CRT", IGn = "Crit Chance", ammount = 5, type = "Weapon", percentage = "%" });

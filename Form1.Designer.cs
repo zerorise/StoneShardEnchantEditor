@@ -36,15 +36,15 @@
             this.label3 = new System.Windows.Forms.Label();
             this.LoadItem = new System.Windows.Forms.Button();
             this.Enchantonitem = new System.Windows.Forms.DataGridView();
-            this.SaveFile = new System.Windows.Forms.Button();
-            this.SwapEnchant = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.EnchantList = new System.Windows.Forms.ListBox();
             this.id = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Enchant = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.EnchantAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.OverAllAmount = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SaveFile = new System.Windows.Forms.Button();
+            this.SwapEnchant = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.EnchantList = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.Enchantonitem)).BeginInit();
             this.SuspendLayout();
             // 
@@ -127,6 +127,38 @@
             this.Enchantonitem.Size = new System.Drawing.Size(457, 251);
             this.Enchantonitem.TabIndex = 9;
             // 
+            // id
+            // 
+            this.id.HeaderText = "id";
+            this.id.Name = "id";
+            this.id.ReadOnly = true;
+            this.id.Width = 30;
+            // 
+            // Enchant
+            // 
+            this.Enchant.HeaderText = "Enchant";
+            this.Enchant.Name = "Enchant";
+            this.Enchant.ReadOnly = true;
+            // 
+            // EName
+            // 
+            this.EName.HeaderText = "IGN";
+            this.EName.Name = "EName";
+            this.EName.ReadOnly = true;
+            // 
+            // EnchantAmount
+            // 
+            this.EnchantAmount.HeaderText = "Amount %";
+            this.EnchantAmount.Name = "EnchantAmount";
+            this.EnchantAmount.ReadOnly = true;
+            this.EnchantAmount.Width = 60;
+            // 
+            // OverAllAmount
+            // 
+            this.OverAllAmount.HeaderText = "OverallAmount";
+            this.OverAllAmount.Name = "OverAllAmount";
+            this.OverAllAmount.ReadOnly = true;
+            // 
             // SaveFile
             // 
             this.SaveFile.Location = new System.Drawing.Point(439, 39);
@@ -164,38 +196,6 @@
             this.EnchantList.Size = new System.Drawing.Size(120, 251);
             this.EnchantList.TabIndex = 14;
             // 
-            // id
-            // 
-            this.id.HeaderText = "id";
-            this.id.Name = "id";
-            this.id.ReadOnly = true;
-            this.id.Width = 30;
-            // 
-            // Enchant
-            // 
-            this.Enchant.HeaderText = "Enchant";
-            this.Enchant.Name = "Enchant";
-            this.Enchant.ReadOnly = true;
-            // 
-            // EName
-            // 
-            this.EName.HeaderText = "IGN";
-            this.EName.Name = "EName";
-            this.EName.ReadOnly = true;
-            // 
-            // EnchantAmount
-            // 
-            this.EnchantAmount.HeaderText = "Amount %";
-            this.EnchantAmount.Name = "EnchantAmount";
-            this.EnchantAmount.ReadOnly = true;
-            this.EnchantAmount.Width = 60;
-            // 
-            // OverAllAmount
-            // 
-            this.OverAllAmount.HeaderText = "OverallAmount";
-            this.OverAllAmount.Name = "OverAllAmount";
-            this.OverAllAmount.ReadOnly = true;
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -214,7 +214,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.CharacterNames);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Stone Shard Enchant Editor";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Enchantonitem)).EndInit();
             this.ResumeLayout(false);

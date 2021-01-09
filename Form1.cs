@@ -56,8 +56,9 @@ namespace StoneShardItemEnchantEditor
             int i = 0;
             foreach (var stone in inventory)
             {
-                Console.WriteLine(stone[0].ToString());
-                ItemListBox.Items.Add(i + " " + stone[0].ToString());
+                //Console.WriteLine(stone[0].ToString());
+                if(rss["inventory"][i][1]["key"] != null)
+                    ItemListBox.Items.Add(i + " " + stone[0].ToString());
                 i++;
             }
 
@@ -79,11 +80,11 @@ namespace StoneShardItemEnchantEditor
         private void refreshEnchant()
         {
             Enchantonitem.Rows.Clear();
-
-            if (rss["inventory"][ItemListBox.SelectedIndex][1]["key"] != null)
+            int id = int.Parse( ItemListBox.SelectedItem.ToString().Split(' ')[0].ToString());
+            if (rss["inventory"][id][1]["key"] != null)
             {
 
-                var inventory = (JObject)rss["inventory"][ItemListBox.SelectedIndex][1];
+                var inventory = (JObject)rss["inventory"][id][1];
                 foreach (var stone in inventory)
                 {
 
@@ -91,14 +92,14 @@ namespace StoneShardItemEnchantEditor
 
                 }
 
-                if (rss["inventory"][ItemListBox.SelectedIndex][1]["key"].ToString().Trim() != "")
+                if (rss["inventory"][id][1]["key"].ToString().Trim() != "")
                 {
                     string enchant;
                     string name;
                     int ammount = 0;
-                    int id = ItemListBox.SelectedIndex;
+                    
                     string overall = "";
-                    JToken texst = rss["inventory"][ItemListBox.SelectedIndex][1]["key"];
+                    JToken texst = rss["inventory"][id][1]["key"];
                     enchant = texst.ToString();
                     if (ens.FirstOrDefault(x => x.devname == enchant) != null)
                     {
@@ -108,21 +109,21 @@ namespace StoneShardItemEnchantEditor
                     {
                         name = "N/A";
                     }
-                    if (rss["inventory"][ItemListBox.SelectedIndex][1]["Char0"] != null)
+                    if (rss["inventory"][id][1]["Char0"] != null)
                     {
 
-                        ammount = int.Parse(rss["inventory"][ItemListBox.SelectedIndex][1]["Char0"].ToString().Split(' ')[1].ToString().Replace("%", "").Replace("+", "").ToString());
+                        ammount = int.Parse(rss["inventory"][id][1]["Char0"].ToString().Split(' ')[1].ToString().Replace("%", "").Replace("+", "").ToString());
                     }
 
-                    if (rss["inventory"][ItemListBox.SelectedIndex][1][enchant] != null)
+                    if (rss["inventory"][id][1][enchant] != null)
                     {
-                        overall = rss["inventory"][ItemListBox.SelectedIndex][1][enchant].ToString();
+                        overall = rss["inventory"][id][1][enchant].ToString();
                     }
 
 
                     Enchantonitem.Rows.Add(id,enchant, name, ammount, overall);
                     //change list of possible enchants
-                    changeEnchantList(rss["inventory"][ItemListBox.SelectedIndex][1]["Metatype"].ToString());
+                    changeEnchantList(rss["inventory"][id][1]["Metatype"].ToString());
                 }
                 else
                 {

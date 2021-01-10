@@ -266,11 +266,36 @@ namespace StoneShardItemEnchantEditor
             ens.Add(new Enchant() {devname = "Shock_Resistance",IGn = "Shock Resistance", ammount = 5,type = "Armor" , percentage = "%" });
             ens.Add(new Enchant() {devname = "Slashing_Resistance",IGn = "Slashing Resistance", ammount = 5,type = "Armor" , percentage = "%" });
             ens.Add(new Enchant() {devname = "Unholy_Resistance",IGn = "Unholy Resistance", ammount = 5,type = "Armor" , percentage = "%" });
+            ens.Add(new Enchant() { devname = "Noise_Produced", IGn = "Noise Produced", ammount = -10, type = "Armor", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Healing_Received", IGn = "Healing Efficiency", ammount = 10, type = "Armor", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Health_Restoration", IGn = "Health Restoration", ammount = 2, type = "Armor", percentage = "%" });
+            ens.Add(new Enchant() { devname = "MP_Restoration", IGn = "Energy Restoration", ammount = 4, type = "Armor", percentage = "%" });
             ens.Add(new Enchant() { devname = "CTA", IGn = "Counter Chance", ammount = 5 ,type = "Weapon", percentage = "%" });
             ens.Add(new Enchant() { devname = "FMB", IGn = "Fumble Chance", ammount = -5, type = "Weapon", percentage = "%" });
             ens.Add(new Enchant() { devname = "CRT", IGn = "Crit Chance", ammount = 5, type = "Weapon", percentage = "%" });
             ens.Add(new Enchant() { devname = "PRR", IGn = "Block Chance", ammount = 5, type = "Weapon", percentage = "%" });
             ens.Add(new Enchant() { devname = "Hit_Chance", IGn = "Accuracy", ammount = 5, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Magic_Power", IGn = "Magic Power", ammount = 10, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Block_Power", IGn = "Block Power", ammount = 5, type = "Weapon", percentage = "" });
+            ens.Add(new Enchant() { devname = "CRTD", IGn = "Crit Efficiency", ammount = 20, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Caustic_Damage", IGn = "Caustic Damage", ammount = 2, type = "Weapon", percentage = "" });
+            ens.Add(new Enchant() { devname = "Fire_Damage", IGn = "Fire Damage", ammount = 2, type = "Weapon", percentage = "" });
+            ens.Add(new Enchant() { devname = "Frost_Damage", IGn = "Frost Damage", ammount = 2, type = "Weapon", percentage = "" });
+            ens.Add(new Enchant() { devname = "Poison_Damage", IGn = "Poison Damage", ammount = 2, type = "Weapon", percentage = "" });
+            ens.Add(new Enchant() { devname = "Shock_Damage", IGn = "Shock Damage", ammount = 2, type = "Weapon", percentage = "" });
+            ens.Add(new Enchant() { devname = "Stun_Chance", IGn = "Stun Chance", ammount = 3, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Daze_Chance", IGn = "Daze Chance", ammount = 3, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Bleeding_Chance", IGn = "Bleed Chance", ammount = 5, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Knockback_Chance", IGn = "Knockback Chance", ammount = 5, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Spell_Energy_Cost", IGn = "Spell Energy Cost", ammount = -10, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Skill_Energy_Cost", IGn = "Skill Energy Cost", ammount = -10, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Armor_Piercing", IGn = "Armor Penetration", ammount = 10, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Bodypart_Damage", IGn = "Bodypart Damage", ammount = 25, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Lifesteal", IGn = "Life Drain", ammount = 8, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Manasteal", IGn = "Energy Drain", ammount = 8, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Cooldown_Reduction", IGn = "Cooldown Duration", ammount = 10, type = "Weapon", percentage = "%" });
+
+
         }
 
         private void changeEnchantList(string typez)

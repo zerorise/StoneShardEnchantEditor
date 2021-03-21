@@ -293,7 +293,7 @@ namespace StoneShardItemEnchantEditor
             ens.Add(new Enchant() { devname = "Bodypart_Damage", IGn = "Bodypart Damage", ammount = 25, type = "Weapon", percentage = "%" });
             ens.Add(new Enchant() { devname = "Lifesteal", IGn = "Life Drain", ammount = 8, type = "Weapon", percentage = "%" });
             ens.Add(new Enchant() { devname = "Manasteal", IGn = "Energy Drain", ammount = 8, type = "Weapon", percentage = "%" });
-            ens.Add(new Enchant() { devname = "Cooldown_Reduction", IGn = "Cooldown Duration", ammount = 10, type = "Weapon", percentage = "%" });
+            ens.Add(new Enchant() { devname = "Cooldown_Reduction", IGn = "Cooldown Duration", ammount = -10, type = "Weapon", percentage = "%" });
 
 
         }
